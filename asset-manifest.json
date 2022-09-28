@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/40thz/aqua/static/css/main.31ff2900.css",
+    "main.js": "/40thz/aqua/static/js/main.b8d7feee.js",
+    "static/media/book-one-bg.jpg": "/40thz/aqua/static/media/book-one-bg.f1e05735c180598fc541.jpg",
+    "static/media/logo.png": "/40thz/aqua/static/media/logo.123cd20e1148b5317172.png",
+    "index.html": "/40thz/aqua/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.31ff2900.css",
+    "static/js/main.b8d7feee.js"
+  ]
+}
