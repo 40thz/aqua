@@ -1,0 +1,62 @@
+.cart {
+	cursor: pointer;
+	padding: 36px 50px 43px;
+	&:hover {
+		.icon {
+			transform: scale(1.1);
+			&::before {
+				transform: scale(0.8);
+			}
+		}
+	}
+
+	&:nth-child(1) {
+		background-color: #f2f5f8;
+		svg {
+			fill: #2186da;
+		}
+		.title {
+			color: #183862;
+		}
+		.subtitle {
+			color: #747f8e;
+		}
+	}
+	&:nth-child(2) {
+		color: #fff;
+		background-color: #2186da;
+		svg {
+			fill: #fff;
+		}
+	}
+	&:nth-child(3) {
+		background-color: #183862;
+		svg {
+			fill: #2186da;
+		}
+		.title {
+			color: #fff;
+		}
+		.subtitle {
+			color: #a6bad4;
+		}
+	}
+}
+
+.icon {
+	position: relative;
+	z-index: 1;
+	transition: all 1s;
+	&::before {
+		opacity: 0.2;
+		transition: all 1s;
+		content: '';
+		position: absolute;
+		top: -8px;
+		right: -3px;
+		width: 40px;
+		height: 40px;
+		background: #e8e8e8;
+		z-index: -1;
+	}
+}

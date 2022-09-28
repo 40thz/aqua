@@ -1,0 +1,41 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"typeRoots": ["node_modules/@types", "src/types"],
+		"baseUrl": ".",
+		"paths": {
+			"@components/*": ["src/components/*"],
+			"@pages/*": ["src/pages/*"],
+			"@service/*": ["src/services/*"],
+			"@images/*": ["src/assets/images/*"],
+			"@redux/*": ["src/store/*"],
+			"@hooks/*": ["src/hooks/*"],
+			"@utils/*": ["src/utils/*"],
+			"@routing/*": ["src/routing/*"],
+			"@server/*": ["../server/*"]
+		}
+	},
+
+	"include": [
+		"src/*",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.png",
+		"craco.config.js",
+		"src/pages/HomePage.jsx"
+	],
+	"exclude": ["node_modules"]
+}

@@ -1,0 +1,39 @@
+
+
+.socialDiscount {
+    .title {
+        position: relative;
+    
+        &::before {
+            position: absolute;
+            top: -20px;
+            background-image: url(https://qondri-html.vercel.app/assets/images/icon/section-title-icon-2.png);
+            width: 14px;
+            height: 14px;
+            content: "";
+        }
+    }
+    ul {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    li {
+
+        margin-right: 0px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -40px;
+            width: 18px;
+            height: 18px;
+            background-size: cover;
+            background-image: url(../../assets/images/checked.png);
+        }
+    }
+}

@@ -1,0 +1,201 @@
+:root {
+    --qondri-font: "Barlow", sans-serif;
+    --qondri-gray: #747f8e;
+    --qondri-gray-rgb: 116, 127, 142;
+    --qondri-white: #ffffff;
+    --qondri-white-rgb: 255, 255, 255;
+    --qondri-black: #183862;
+    --qondri-black-rgb: 24, 56, 98;
+    --qondri-base: #2186DA;
+    --qondri-base-rgb: 137, 185, 46;
+    --qondri-primary: #f2f5f8;
+    --qondri-primary-rgb: 242, 245, 248;
+    --qondri-bdr-color: #dee3e8;
+    --qondri-bdr-color-rgb: 222, 227, 232;
+}
+
+
+
+
+
+
+
+.services-one__single {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+
+}
+
+.services-one__img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.services-one__img:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-color: rgba(24, 56, 98, 0.3);
+    opacity: 1;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: perspective(400px) rotateX(-90deg) scale(0.2);
+    -ms-transform: perspective(400px) rotateX(-90deg) scale(0.2);
+    transform: perspective(400px) rotateX(-90deg) scale(0.2);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    border-radius: var(--qondri-bdr-radius);
+    z-index: 1;
+}
+
+.services-one__single:hover .services-one__img:before {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg) scale(1);
+    -ms-transform: perspective(400px) rotateX(0deg) scale(1);
+    transform: perspective(400px) rotateX(0deg) scale(1);
+}
+
+.services-one__img img {
+    width: 100%;
+    border-radius: var(--qondri-bdr-radius);
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
+    transition-property: all;
+}
+
+.services-one__single:hover .services-one__img img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+.services-one__icon {
+    height: 92px;
+    width: 92px;
+    background-color: var(--qondri-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.services-one__icon span {
+    font-size: 64px;
+    color: var(--qondri-white);
+    position: relative;
+    display: inline-block;
+    transition: all 500ms linear;
+    transition-delay: 0.1s;
+}
+
+.services-one__single:hover .services-one__icon span {
+    transform: rotateY(360deg);
+}
+
+.services-one__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid var(--qondri-bdr-color);
+    border-top: 0;
+    text-align: center;
+    padding: 31px 38px 40px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.services-one__single:hover .services-one__content {
+    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+}
+
+.services-one__title {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+.services-one__title a {
+    color: #183862;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.services-one__single:hover .services-one__title a {
+    color: var(--qondri-base);
+}
+
+.services-one__text {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 31px;
+}
+
+.services-one__btn {
+    font-size: 13px;
+    color: var(--qondri-gray);
+    background-color: var(--qondri-primary);
+    padding: 8px 90px 8px;
+}
+
+.services-one__btn span {
+    font-size: 15px;
+}
+
+.services-one__single:hover .services-one__btn {
+    color: var(--qondri-white);
+}
+
+.services-one__single:hover .services-one__btn::before {
+    height: 580%;
+}
+
+.services {
+
+    .swiper-slide {
+        height: auto;
+    }
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #2186DA;
+    background-color: #fff;
+    border-radius: 100%;
+
+    &:hover {
+        background-color: #2186DA;
+
+    }
+
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #2186DA;
+}

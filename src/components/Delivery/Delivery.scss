@@ -1,0 +1,12 @@
+.delivery {
+    .thm-btn {
+        background-color: #183862;
+
+        &::before {
+            background-color: #fff;
+        }
+        &:hover {
+            color: #183862;
+        }
+    }
+}

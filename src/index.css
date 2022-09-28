@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;500&display=swap');
+body {
+	font-family: 'Barlow', sans-serif;
+}
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #2186da;
+}
+
+
+.overaly {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgb(24, 56, 98);
+	background: linear-gradient(
+		90deg,
+		rgba(24, 56, 98, 1) 0%,
+		rgba(24, 56, 98, 1) 2%,
+		rgba(24, 56, 98, 0) 70%
+	);
+	z-index: 1;
+	pointer-events: none;
+}
+
+
+@keyframes bgSlide {
+	0% {
+	  background-position: 0 0;
+	}
+  
+	20% {
+	  background-position: -100px 0;
+	}
+  
+	40% {
+	  background-position: -200px 0;
+	}
+  
+	60% {
+	  background-position: -150px 0;
+	}
+  
+	80% {
+	  background-position: -100px 0;
+	}
+  
+	100% {
+	  background-position: 0px 0;
+	}
+  }
